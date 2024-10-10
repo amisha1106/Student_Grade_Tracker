@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track&Groww</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="student.css">
+
+</head>
+
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">
+                track&groww
+            </a>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_1280.png" class="image" alt="">
+                <h3 class="name">Track Groww</h3>
+                <p class="role">student</p>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                   <a href="login.html" class="option-btn">login</a>
+                   <a href="register.html" class="option-btn">register</a>
+                </div>
+             </div>
+        </section>
+
+    </header>
+
+    <div class="side-bar">
+
+        <div class="close-side-bar">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+        <img src="https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_1280.png" class="image" alt="">
+        <h3 class="name">Track Groww</h3>
+        <span>Student</span>
+        <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="index.html"><i class="fas fa-question"></i><span>About Us</span></a>
+            <a href="index.html"><i class="fas fa-chalkboard-user"></i><span>Contact Us</span></a>
+            <a href="cgpa.html"><i class="fa-solid fa-calculator"></i><span>CGPA Calculator</span></a>
+            <a href="grade.html"><i class="fa-solid fa-user-graduate"></i><span>Grade Tracker</span></a>
+            <a href="graph.html"><i class="fas fa-chart-pie"></i><span>Mark Analyser</span></a>
+        </nav>
+      </div>
+    <div class="calculator-box">
+        <h1>CGPA CALCULATOR</h1>
+        <p>
+          This CGPA Calculator is based on the GIET University grading system.
+        </p>
+    
+        <div id="course-wrapper">
+          <form class="key-0">
+              <strong><label id="course-row" for="courses">Courses</label></strong>
+            <strong><label id="course-row" for="courses">Credit Units</label></strong>
+            <strong><label id="course-row" for="courses">Grades</label></strong>
+            
+            <input type="text" placeholder="Course code" id="courses key-0" />
+           
+            <input
+              type="number"
+              class="credit-units key-0"
+              placeholder="Credit Units"
+              value=""
+              required
+            />
+     
+            <select class="grade key-0" required>
+              <option class="grade" value="select">Select</option>
+              <option class="grade" value="5">O</option>
+              <option class="grade" value="4">E</option>
+              <option class="grade" value="3">A</option>
+              <option class="grade" value="2">B</option>
+              <option class="grade" value="1">C</option>
+              <option class="grade" value="0">D</option>
+              <option class="grade" value="0">F</option>
+            </select>
+          </form>
+        </div>
+    
+        <div class="btn1">
+          <button onclick="addCourse()">+ Add Course</button>
+          <button onclick="removeCourse()">- Remove Course</button>
+          <button onclick="calcCgpa()">Calculate CGPA</button>
+        </div>
+        <div class="lastp">
+          <p id="cgpa-calc">Your CGPA is:</p>
+        </div>
+        <a href="pcgpa.html" class="btn">Get Your Percentage</a>
+      </div>
+
+    <script src="cgpa.js"></script>
+    <script src="student.js"></script>
+
+</html>
+    

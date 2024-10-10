@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track&Groww</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="student.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">
+                track&groww
+            </a>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_1280.png" class="image" alt="">
+                <h3 class="name">Track Groww</h3>
+                <p class="role">student</p>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                   <a href="login.html" class="option-btn">login</a>
+                   <a href="register.html" class="option-btn">register</a>
+                </div>
+             </div>
+        </section>
+
+    </header>
+    <section class="graphic">
+    <h1>Subject Marks Graph</h1>
+  <form id="marksForm">
+    <label for="subject">Subject Name:</label>
+    <input type="text" id="subject" required>
+    <br>
+    <label for="marks">Marks Obtained:</label>
+    <input type="number" id="marks" required>
+    <br>
+    <label for="fullMarks">Full Marks:</label>
+    <input type="number" id="fullMarks" required>
+    <br>
+    <button type="button" class="bt1" onclick="addSubject()">Add Subject</button>
+    <button type="button" class="bt2" onclick="clearRecentSubject()">Clear Recent Subject</button>
+    <button type="button" class="bt3" onclick="generateGraph()">Generate Graph</button>
+  </form>
+
+  <div id="subjectInfo"></div>
+
+  <div class="graph-container">
+    <div class="graph" id="barGraph">
+      <h2>Bar Graph</h2>
+      <canvas id="barChart" width="400" height="200"></canvas>
+    </div>
+    <div class="graph" id="lineGraph">
+      <h2>Line Graph</h2>
+      <canvas id="lineChart" width="400" height="200"></canvas>
+    </div>
+    <div class="graph" id="pieGraph">
+      <h2>Pie Chart</h2>
+      <canvas id="pieChart" width="400" height="200"></canvas>
+    </div>
+    <div class="graph" id="donutGraph">
+      <h2>Donut Chart</h2>
+      <canvas id="donutChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <div id="subjectStatus"></div>
+</section>
+
+    <div class="side-bar">
+
+        <div class="close-side-bar">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+        <img src="https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_1280.png" class="image" alt="">
+        <h3 class="name">Track Groww</h3>
+        <span>Student</span>
+        <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="index.html"><i class="fas fa-question"></i><span>About Us</span></a>
+            <a href="contact.html"><i class="fas fa-chalkboard-user"></i><span>Contact Us</span></a>
+            <a href="cgpa.html"><i class="fa-solid fa-calculator"></i><span>CGPA Calculator</span></a>
+            <a href="grade.html"><i class="fa-solid fa-user-graduate"></i><span>Grade Tracker</span></a>
+            <a href="graph.html"><i class="fas fa-chart-pie"></i><span>Mark Analyser</span></a>
+        </nav>
+    </div>
+    <script src="graph.js"></script>
+    <script src="student.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

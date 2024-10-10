@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track&Groww</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="student.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">
+                track&groww
+            </a>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_1280.png" class="image" alt="">
+                <h3 class="name">Track Groww</h3>
+                <p class="role">student</p>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                   <a href="login.html" class="option-btn">login</a>
+                   <a href="register.html" class="option-btn">register</a>
+                </div>
+             </div>
+        </section>
+        <div class="side-bar">
+
+            <div class="close-side-bar">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="profile">
+            <img src="https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_1280.png" class="image" alt="">
+            <h3 class="name">Track Groww</h3>
+            <span>Student</span>
+            <a href="profile.html" class="btn">view profile</a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+                <a href="index.html"><i class="fas fa-question"></i><span>About Us</span></a>
+                <a href="index.html"><i class="fas fa-chalkboard-user"></i><span>Contact Us</span></a>
+                <a href="cgpa.html"><i class="fa-solid fa-calculator"></i><span>CGPA Calculator</span></a>
+                <a href="grade.html"><i class="fa-solid fa-user-graduate"></i><span>Grade Tracker</span></a>
+                <a href="graph.html"><i class="fas fa-chart-pie"></i><span>Mark Analyser</span></a>
+            </nav>
+        </div>
+        <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <div class="data">
+                        <p id="data"></p>  
+                        <span id="comment"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input type="number" class="app-form-control" placeholder="SUBJECT MARKS" id="sm">
+                      </div>
+                      <div class="app-form-group">
+                        <input type="text" class="app-form-control" placeholder="DBMS" id="dbms">
+                      </div>
+                      <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="OOPS" id="oop">
+                      </div>
+                       <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="APPLIED STATISTIC" id="as">
+                      </div>
+                      <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="DIGITAL ELECTRONICS" id="de" >
+                      </div>
+                      <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="DATA SCIENCE" id="ds" >
+                      </div>
+                      <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="ECONOMICS" id="eec" >
+                      </div>
+                                  
+                    </div>
+                    <div > 
+                      <input type="button" name="" value="showPercentage" class="btn" onclick="calcy()">
+                    </div>
+                </div>
+          
+              </div>
+                <div class="app-form-group showdata">
+                        <p id="showData" >  </p>
+               </div>
+            </div>
+          </div>
+          <script src="grade.js"></script>
+          <script src="student.js"></script>
+        </body>
+        </html>
